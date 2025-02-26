@@ -1,0 +1,65 @@
+/* Ensure full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make root element fill screen */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure the main container grows */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Push footer to the bottom */
+main {
+  flex: 1;  /* Pushes footer down */
+  padding: 20px; /* Optional padding */
+  min-height: calc(100vh - 200px); /* Adjust based on footer height */
+}
+
+/* Footer Fix */
+.footer {
+  background: #f8f9fa;
+  padding: 40px 0;
+  border-top: 1px solid #e0e0e0;
+  flex-shrink: 0;  /* Prevents collapsing */
+  width: 100%;
+}
+
+/* Navbar & Footer Cleanup */
+.navbar, .footer, .main-content {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Force footer background color */
+.footer {
+  background-color: white !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Remove card shadows */
+.card, .footer .container, .footer .row {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+#our-mission {
+  margin-bottom: 50px; /* Add spacing to prevent overlap */
+}
+#hero-slider {
+  margin-bottom: 50px;  /* Ensure enough space for the footer */
+}

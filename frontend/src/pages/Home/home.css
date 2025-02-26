@@ -1,0 +1,156 @@
+/* Wrapper */
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Hero Slider */
+#hero-slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 50px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    background: rgba(222, 220, 220, 0.7);
+    
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 600px;
+}
+
+.slide-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Our Mission Section */
+#our-mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 50px;
+}
+
+.mission-content {
+    width: 55%;
+}
+
+.mission-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.mission-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.mission-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-content li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.mission-content li::before {
+    content: "✔";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.mission-image {
+    width: 40%;
+}
+
+.mission-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    #our-mission {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mission-content, .mission-image {
+        width: 100%;
+    }
+
+    .mission-image {
+        margin-top: 20px;
+    }
+
+    .slide-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-content {
+        width: 90%;
+    }
+
+    .slide-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+    }
+
+    .mission-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .mission-content p {
+        font-size: 1rem;
+    }
+
+    .mission-content li {
+        font-size: 1rem;
+    }
+}

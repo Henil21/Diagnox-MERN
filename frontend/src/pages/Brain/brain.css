@@ -1,0 +1,76 @@
+/* Centered and Responsive Styling */
+.container {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  background: linear-gradient(135deg, #fcfcfc, #e9f0f8);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Centered File Upload Box */
+.file-upload {
+  width: 80%;
+  max-width: 350px; /* Reducing width */
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  background: rgba(0, 123, 255, 0.05);
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.file-upload:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+/* File Input */
+input[type="file"] {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+input[type="file"]::file-selector-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0056b3;
+}
+
+/* Centered Predict Button */
+.predict-btn {
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.predict-btn:hover {
+  background: #218838;
+}
+
+.predict-btn:active {
+  transform: scale(0.95);
+}
